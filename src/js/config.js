@@ -87,6 +87,25 @@ define(function(require) {
 
 			// The appstore is exposed to admins by default. If set to false, it will be hidden for all users.
 			// hideAppStore: true
+
+			// Setting these flags determines whether to show or hide each part of the Billing section in Control Center. All are false (i.e. shown) by default.
+			// If hideAllBilling is true, it overrides the other settings.
+			// This is useful if you have custom app(s) for billing.
+			//billing: {
+			//	hideAllBilling: false,
+			//	hideUsageCharges: false,
+			//	hideServicePlan: false,
+			//	hideTransactions: false
+			//},
+
+			// Setting these flags determines which kinds of trunking to show in Control Center, if any. All are false (i.e. shown) by default.
+			// If hideAllTrunking is true, it overrides the other settings.
+			//trunking: {
+			//	hideAllTrunking: false,
+			//	hideOutboundTrunking: false,
+			//	hideInboundTrunking: false,
+			//	hideTwoWayTrunking: false
+			//}
 		},
 		developerFlags: {
 			// Setting this flag to true will show all restricted callflows in the Callflows app
